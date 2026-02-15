@@ -20,6 +20,7 @@ sale_price – Target variable
 
 **Data Preprocessing**
 The following preprocessing steps were performed:
+
 1.Handling Missing Values
 Numerical features were filled using median values.
 Categorical features were filled using the most frequent category.
