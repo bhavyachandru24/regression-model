@@ -84,7 +84,7 @@ Install them using a Python package manager before running the project.
 
 **How to Run the Project**
 
-1. Place the dataset file (housing_dataset.csv) in the same directory as the script.
+1. Place the dataset file (house_data.csv) in the same directory as the script.
 
 2. Ensure all required libraries are installed.
 
