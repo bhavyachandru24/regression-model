@@ -1,4 +1,4 @@
-# regression-model
+# Regression-model
 **Model Overview**
 The objective of this model is to predict house sale prices using multiple structural and location-based features. The model aims to capture relationships between independent variables (features) and the dependent variable (sale_price) to provide accurate price predictions.
 
