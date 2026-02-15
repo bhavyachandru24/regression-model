@@ -53,7 +53,7 @@ Ensure these libraries are installed in your Python environment before running t
 
 **How to Run the Code**
 1.Download or clone the project files.
-2.Place the dataset file (housing_dataset.csv) in the same directory as the main script file (reg.py).
+2.Place the dataset file (house_data.csv) in the same directory as the main script file (reg.py).
 3.Open the project folder in your Python environment (such as VS Code, PyCharm, or any IDE that supports Python).
 4.Open the file named reg.py.
 5.Run the script using your IDE’s run option.
