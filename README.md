@@ -2,67 +2,107 @@
 **Model Overview**
 The objective of this model is to predict house sale prices using multiple structural and location-based features. The model aims to capture relationships between independent variables (features) and the dependent variable (sale_price) to provide accurate price predictions.
 
-**Problem Statement**
-Given a housing dataset containing features such as bedrooms, bathrooms, square footage, lot size, location, age of the house, number of floors, and property type, the task is to predict the sale price of a house.
-This is a regression problem where the target variable is continuous.
-
 **Dataset Description**
-The dataset includes the following columns:
+
+The dataset includes the following features:
+
 bedrooms – Number of bedrooms
+
 bathrooms – Number of bathrooms
-square_footage – Total house area
+
+square_footage – Total built area
+
 lot_size – Land area
+
 location – Urban / Suburban / Rural
-age – Age of the property
+
+age – Age of the house
+
 floors – Number of floors
-property_type – Type of property
+
+property_type – House / Apartment / Condo / Villa
+
 sale_price – Target variable
 
-**Data Preprocessing**
+**Data Preprocessing Steps**
 
-1.Handling Missing Values
-Numerical features were filled using median values.
-Categorical features were filled using the most frequent category.
+The following preprocessing steps were performed:
 
-2.Encoding Categorical Variables
-Categorical columns were encoded using OneHot Encoding.
+1. Handling Missing Values
 
-3.Feature Scaling
-StandardScaler was applied to normalize numerical features.
+Numerical columns filled using median values
 
-4.Train-Test Split
-The dataset was divided into training and testing sets using an 80:20 ratio.
+Categorical columns filled using mode
 
-5.Model Implementation
-The primary model used in this project is:
+2. Encoding Categorical Variables
+
+OneHot Encoding applied to categorical features
+
+3. Feature Scaling
+
+StandardScaler applied to numerical features
+
+4. Train-Test Split
+
+80% training data
+
+20% testing data
+
+5. Model Used
+
 Linear Regression
-Additional models can be implemented for comparison, such as Ridge, Lasso, or Random Forest Regressor.
 
-**Evaluation Metrics**
-The model performance was evaluated using:
-1.Mean Squared Error (MSE)
-2.R² Score
-These metrics measure prediction accuracy and goodness of fit.
+Optional comparison models:
+
+Ridge Regression
+
+Lasso Regression
+
+Random Forest Regressor
+
+6. Evaluation Metrics
+
+The model was evaluated using:
+
+Mean Squared Error (MSE)
+
+R² Score
+
+These metrics measure prediction error and the overall goodness of fit.
 
 **Requirements**
-The project requires the following Python libraries:
-1.pandas
-2.numpy
-3.scikit-learn
-Ensure these libraries are installed in your Python environment before running the project.
 
-**How to Run the Code**
-1.Download or clone the project files.
-2.Place the dataset file (house_data.csv) in the same directory as the main script file (reg.py).
-3.Open the project folder in your Python environment (such as VS Code, PyCharm, or any IDE that supports Python).
-4.Open the file named reg.py.
-5.Run the script using your IDE’s run option.
-6.After execution, the program will:
-  Load the dataset
-  Perform preprocessing
-  Train the regression model
-  Evaluate model performance
-  Display evaluation results
+The following Python libraries are required:
+
+pandas
+
+numpy
+
+scikit-learn
+
+Install them using a Python package manager before running the project.
+
+**How to Run the Project**
+
+1. Place the dataset file (housing_dataset.csv) in the same directory as the script.
+
+2. Ensure all required libraries are installed.
+
+3. Open the project folder in your Python environment (VS Code, PyCharm, or similar).
+
+4. Run the main script file:
+
+reg.py
+
+5. The program will:
+
+Load and preprocess the dataset
+
+Train the regression model
+
+Evaluate performance
+
+Display evaluation metrics
 
 **Conclusion**
 The regression model successfully predicts house prices based on multiple input features. The high R² score indicates strong predictive performance, and the error metrics provide insight into average prediction deviation.
